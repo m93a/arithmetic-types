@@ -30,6 +30,7 @@ export interface VectorSpace<T, F>
 extends AdditiveGroup<T> {
     [symbols.VectorSpace]: true
 
+    scale(a: T, s: number): T
     scale(a: T, s: F): T
 }
 
@@ -51,6 +52,7 @@ extends NormedVectorSpace<T, F> {
 export interface Ring<T>
 extends AdditiveGroup<T> {
     [symbols.Ring]: true
+    isCommutative: boolean
 
     mul(a: T, b: T): T
 
@@ -73,6 +75,7 @@ export interface NormedDivisionRing<T, F>
 extends DivisionRing<T>, NormedVectorSpace<T, F> {
     [symbols.NormedDivisionRing]: true
 
+    fromNumber(a: number): T
     fromReal(a: F): T
 
     conj(a: T): T
