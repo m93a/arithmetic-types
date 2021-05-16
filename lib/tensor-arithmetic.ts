@@ -3,6 +3,10 @@ import { NormedVectorSpace } from "./scalar-arithmetic";
 export type TensorNormType = number | '-inf' | 'inf' | 'fro'
 export type ArrayTensor<F> = F[] | ArrayTensor<F>[]
 
+export namespace symbols {
+    export const Tensor = Symbol.for('arithmetics-tensor')
+}
+
 export interface Tensor<T, F>
 extends NormedVectorSpace<T, F> {
     size(a: T): number[],
