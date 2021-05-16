@@ -9,7 +9,7 @@ Standardized interfaces for mathematical data types, such as Complex, Fraction a
  * Every instance of the data type **must** provide a `x.clone()` method and a reference to the `Arithmetics` object using `x[Symbol.for('arithmetics')]`.
  * The instances **may** implement arithmetic methods such as `x.add(y)`; if they do, these arithmetic methods **should** be mutating.
    * If the instance methods **are** mutating, then they **must** return `this`, ie. `x.add(y)` returns the mutated `x`.
-   * If the instance methods **are not** mutating, then they must return the result as a new instance of the data type.
+   * If the instance methods **are not** mutating, then they **must** return the result as a new instance of the data type.
 
 (The words _must_, _should_ and _may_ follow [RFC2119](https://datatracker.ietf.org/doc/html/rfc2119))
 
@@ -51,7 +51,7 @@ function geometricMean<T, F>(first: Numeric<T, F>, ...args: Numeric<T, F>[])
 <br/>
 
 ## Instance methods
-This is also an implementation of arithmetic and geometric mean, this time for the data types which support instance methods. This code is potentially faster than the previous one, because it doesn't create a new instance for every arithmetic operartion.
+This is also an implementation of arithmetic and geometric mean, this time for the data types which support instance methods. This code is potentially faster than the previous one, because it doesn't have to create a new instance for every arithmetic operartion.
 ```typescript
 import { NormedDivisionRing, InstanceWithMethods } from 'arithmetic-types'
 
