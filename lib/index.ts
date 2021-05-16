@@ -13,3 +13,4 @@ export type symbols = typeof symbols
 export * from './instance-types'
 export * from './scalar-arithmetic'
 export * from './tensor-arithmetic'
+export * from './is'
