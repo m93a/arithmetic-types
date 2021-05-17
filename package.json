@@ -1,6 +1,6 @@
 {
   "name": "@m93a/arithmetic-types",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Interfaces for mathematical data-types to implement",
   "main": "lib/index.ts",
   "repository": "https://github.com/m93a/arithmetic-types",
