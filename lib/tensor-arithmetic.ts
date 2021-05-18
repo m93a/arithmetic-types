@@ -9,8 +9,18 @@ export namespace symbols {
 
 export interface Tensor<T, F>
 extends NormedVectorSpace<T, F> {
+    [symbols.Tensor]: true,
+
     size(a: T): number[],
-    element(a: T, index: number[]): F
+
+    /** Returns the element at the specified index. */
+    get(a: T, index: number[]): F
+
+    /**
+     * Returns a new tensor with the element at the specified
+     * index replaced by the specified value.
+     */
+    set?(a: T, index: number[], value: F): T
 
     norm(a: T, which?: TensorNormType): F
     normSq(a: T, which?: TensorNormType): F
