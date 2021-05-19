@@ -6,7 +6,7 @@ export namespace symbols {
 
 export interface InstanceOf<A> {
     [symbols.Arithmetics]: A
-    clone(): this
+    clone(): InstanceOf<A>
 }
 
 type IgnoreNever<T> = Pick<T, { [K in keyof T]: T[K] extends never ? never : K }[keyof T]>
