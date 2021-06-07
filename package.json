@@ -1,6 +1,6 @@
 {
   "name": "@m93a/arithmetic-types",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Interfaces for mathematical data-types to implement",
   "repository": "https://github.com/m93a/arithmetic-types",
   "author": "Michal Grňo (m93a)",
