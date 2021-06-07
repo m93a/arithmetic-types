@@ -2,15 +2,27 @@
   "name": "@m93a/arithmetic-types",
   "version": "0.0.6",
   "description": "Interfaces for mathematical data-types to implement",
-  "main": "lib/index.js",
   "repository": "https://github.com/m93a/arithmetic-types",
   "author": "Michal Grňo (m93a)",
   "license": "CC0",
+  "type": "module",
+  "main": "./lib/es/index.js",
+  "types": "./lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/es/index.js",
+      "require": "./lib/umd/index.js"
+    },
+    "./es": "./lib/es/index.js",
+    "./cjs": "./lib/cjs/index.js",
+    "./umd": "./lib/umd/index.js"
+  },
   "scripts": {
     "build": "rollup -c"
   },
   "devDependencies": {
     "rollup": "^2.51.0",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.2"
   }
