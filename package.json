@@ -1,6 +1,6 @@
 {
   "name": "@m93a/arithmetic-types",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Interfaces for mathematical data-types to implement",
   "main": "lib/index.js",
   "repository": "https://github.com/m93a/arithmetic-types",
