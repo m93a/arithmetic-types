@@ -1,0 +1,10 @@
+{
+    "include": [ "src/**/*" ],
+    "compilerOptions": {
+        "declaration": true,
+        "lib": [
+            "ES5",
+            "ES2015.Symbol"
+        ]
+    }
+}
