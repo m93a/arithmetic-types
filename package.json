@@ -6,7 +6,6 @@
   "author": "Michal Grňo (m93a)",
   "license": "CC0",
   "private": true,
-  "type": "module",
   "main": "./lib/es/index.js",
   "types": "./lib/types/index.d.ts",
   "exports": {
