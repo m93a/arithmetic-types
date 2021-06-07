@@ -2,8 +2,16 @@
   "name": "@m93a/arithmetic-types",
   "version": "0.0.5",
   "description": "Interfaces for mathematical data-types to implement",
-  "main": "lib/index.ts",
+  "main": "lib/index.js",
   "repository": "https://github.com/m93a/arithmetic-types",
   "author": "Michal Grňo (m93a)",
-  "license": "CC0"
+  "license": "CC0",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^2.51.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.2"
+  }
 }
