@@ -1,11 +1,10 @@
 {
   "name": "@m93a/arithmetic-types",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Interfaces for mathematical data-types to implement",
   "repository": "https://github.com/m93a/arithmetic-types",
   "author": "Michal Grňo (m93a)",
   "license": "CC0",
-  "type": "module",
   "main": "./lib/es/index.js",
   "types": "./lib/types/index.d.ts",
   "exports": {
