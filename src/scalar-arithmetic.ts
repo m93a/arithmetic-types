@@ -84,6 +84,9 @@ extends DivisionRing<T>, NormedVectorSpace<T, F> {
 
     pow(a: T, b: number): T
     pow(a: T, b: T): T
+
+    log(a: T): T
+    log1p(a: T): T
 }
 
 export interface Real<T>
@@ -91,4 +94,10 @@ extends NormedDivisionRing<T, T> {
     [symbols.Real]: true
 
     toNumber(a: T): number
+
+    compare(a: T, b: T): -1 | 0 | 1
+    lt(a: T, b: T): boolean
+    lte(a: T, b: T): boolean
+    gte(a: T, b: T): boolean
+    gt(a: T, b: T): boolean
 }
